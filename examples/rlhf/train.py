@@ -40,7 +40,7 @@ def create_loss_estimator(eval_iters, ctx):
     return estimate_loss
 
 
-@hydra.main(version_base="1.1", config_path="config", config_name="train")
+@hydra.main(version="1.1", config_path="config", config_name="train")
 def main(cfg):
     loss_logger = get_file_logger("loss_logger", "transformer_loss_logger.log")
 
